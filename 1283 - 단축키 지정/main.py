@@ -3,7 +3,6 @@
 
 
 def setShortCut(string, dt):
-    #공백이 많을경우 고려해야됨
     dt_cnt = 0
     for i in range(len(dt)):
         if not (dt[i][0].upper() in shortcut):
@@ -42,9 +41,6 @@ def main():
         saver.append(string)
         
         setShortCut(string,dt)
-        
-    print(shortcut)
-    print(shortcut_index)
     
     for i in range(N):
         ans = ''
